@@ -5,11 +5,11 @@ export default class Header extends Component {
     return (
       <React.Fragment>
         <header>
-          <h1>dongwon kim</h1>
+          <h1>Dongwon Kim</h1>
         </header>
         <headeritem>
           <div>
-            ehddnjs8989@gmail.com <div> Seoul, Korea </div>
+            ehddnjs8989@gmail.com <p> Seoul, Korea </p>
           </div>
           <a href="https://github.com/gimdongwon">github</a>
           <br />
