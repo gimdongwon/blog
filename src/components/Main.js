@@ -9,12 +9,29 @@ export default class Main extends React.Component {
 
   render() {
     return (
-      <nav>
-        <li onClick={e => this.setState({ currentState: "About" })}>About</li>
-        {this.state.currentState === "About" ? <MyIntroduce /> : ""}
-        <li onClick={e => this.setState({ currentState: "Works" })}>Works</li>
+      <ul className="menuList">
+        <li
+          onClick={e =>
+            this.setState({
+              currentState: "About"
+            })
+          }
+          className="aboutList"
+        >
+          About
+        </li>
+        <p className="menuListPara">
+          {this.state.currentState === "About" ? <MyIntroduce /> : ""}
+        </p>
+
+        <li
+          onClick={e => this.setState({ currentState: "Works" })}
+          className="worksList"
+        >
+          Works
+        </li>
         {this.state.currentState === "Works" ? <MyWorks /> : ""}
-      </nav>
+      </ul>
     );
   }
 }

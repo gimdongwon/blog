@@ -11,20 +11,33 @@ export default class MyIntroduce extends React.Component {
       <div>
         <p>
           Hihi! nice to meet you. My name is dongwon kim, I wanna be a front end
-          developer. So, I am studying HTML, CSS, JavaScript, React.js, Restful
-          API, etc... My dreams are a lot of things, one of thing in strong wish
-          is will be a great React-developer in korea. Thank you for reading
-          this my writing. We will be able to friendly.
+          developer. <br />So, I am studying HTML, CSS, JavaScript, React.js,
+          Restful API, etc... <br />My dreams are a lot of things, one of thing
+          in strong wish is will be a great React-developer in korea. <br />Thank
+          you for reading this my writing. We will be able to friendly.
         </p>
 
-        <ul>
-          <li onClick={e => this.setState({ pages: "Skils" })}>Skils</li>
+        <ul className="listItems">
+          <li
+            onClick={e => this.setState({ pages: "Skils" })}
+            className="SkilsList"
+          >
+            Skils
+          </li>
           {this.state.pages === "Skils" ? <SkilsItems /> : ""}
-          <li onClick={e => this.setState({ pages: "Experience" })}>
+          <li
+            onClick={e => this.setState({ pages: "Experience" })}
+            className="ExperienceList"
+          >
             Experience
           </li>
           {this.state.pages === "Experience" ? <ExperienceItems /> : ""}
-          <li onClick={e => this.setState({ pages: "Others" })}>Others</li>
+          <li
+            onClick={e => this.setState({ pages: "Others" })}
+            className="OthersList"
+          >
+            Others
+          </li>
           {this.state.pages === "Others" ? <OthersItems /> : ""}
         </ul>
       </div>

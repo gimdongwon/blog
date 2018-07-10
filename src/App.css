@@ -1,28 +1,110 @@
+* {
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'sans-serif';
+    box-sizing: border-box;
+    letter-spacing: -.01em;
+}
+
 .App {
-  text-align: center;
+    font-family: spoqaHanSans;
+    display: flex;
+    margin-top: 16px
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Header {
+    width: 40%;
+}
+
+header {
+    padding-left: 20px;
+}
+
+.main {
+    width: 60%;
+}
+
+.menuList {
+    /* display: flex; */
+    list-style: none;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    font-size: 20px;
+}
+
+.menuListPara {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.aboutList {
+    display: inline;
+    padding-bottom: 100px;
+    text-decoration: underline;
+}
+
+.worksList {
+    text-decoration: underline;
+}
+
+.listItems {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.emailTag {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+    color: #181818
+}
+
+.copyTag {
+    margin-top: 300px;
+}
+
+.SkilsList {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.ExperienceList {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.OthersList {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
