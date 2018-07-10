@@ -11,9 +11,9 @@ export default class Main extends React.Component {
     return (
       <nav>
         <li onClick={e => this.setState({ currentState: "About" })}>About</li>
-        {this.state.currentState ? <MyIntroduce /> : ""}
+        {this.state.currentState === "About" ? <MyIntroduce /> : ""}
         <li onClick={e => this.setState({ currentState: "Works" })}>Works</li>
-        {this.state.currentState ? <MyWorks /> : ""}
+        {this.state.currentState === "Works" ? <MyWorks /> : ""}
       </nav>
     );
   }
