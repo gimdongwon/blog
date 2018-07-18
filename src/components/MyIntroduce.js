@@ -4,7 +4,25 @@ import ExperienceItems from "./ExperienceItems";
 import OthersItems from "./OthersItems";
 export default class MyIntroduce extends React.Component {
   state = {
-    pages: ""
+    pages: "",
+    skilsToggleOn: false,
+    experienceToggleOn: false,
+    othersToggleOn: false
+  };
+  skilsClick = e => {
+    this.setState(prevState => ({
+      skilsToggleOn: !prevState.skilsToggleOn
+    }));
+  };
+  experiencsClick = e => {
+    this.setState(prevState => ({
+      experiencsToggleOn: !prevState.experiencsToggleOn
+    }));
+  };
+  othersClick = e => {
+    this.setState(prevState => ({
+      othersToggleOn: !prevState.othersToggleOn
+    }));
   };
   render() {
     return (
@@ -18,27 +36,18 @@ export default class MyIntroduce extends React.Component {
         </p>
 
         <ul className="listItems">
-          <li
-            onClick={e => this.setState({ pages: "Skils" })}
-            className="SkilsList"
-          >
+          <li onClick={this.skilsClick} className="SkilsList">
             Skils
           </li>
-          {this.state.pages === "Skils" ? <SkilsItems /> : ""}
-          <li
-            onClick={e => this.setState({ pages: "Experience" })}
-            className="ExperienceList"
-          >
+          {this.state.skilsToggleOn ? <SkilsItems /> : ""}
+          <li onClick={this.experiencsClick} className="ExperienceList">
             Experience
           </li>
-          {this.state.pages === "Experience" ? <ExperienceItems /> : ""}
-          <li
-            onClick={e => this.setState({ pages: "Others" })}
-            className="OthersList"
-          >
+          {this.state.experiencsToggleOn ? <ExperienceItems /> : ""}
+          <li onClick={this.othersClick} className="OthersList">
             Others
           </li>
-          {this.state.pages === "Others" ? <OthersItems /> : ""}
+          {this.state.othersToggleOn ? <OthersItems /> : ""}
         </ul>
       </div>
     );

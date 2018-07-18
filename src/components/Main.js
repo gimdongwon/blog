@@ -21,7 +21,6 @@ export default class Main extends React.Component {
           >
             About
           </li>
-
           <li
             onClick={e =>
               this.setState({
