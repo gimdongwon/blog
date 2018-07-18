@@ -10,7 +10,7 @@ export default class Header extends Component {
             <div className="emailTag">
               <address>
                 <a href="mailto:ehddnjs8989@gmail.com">ehddnjs8989@gmail.com</a>
-              </address>{" "}
+              </address>
               <br />
               Seoul, Korea
             </div>

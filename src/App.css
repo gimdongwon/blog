@@ -52,7 +52,7 @@ header {
 }
 
 .menuList {
-    /* display: flex; */
+    display: flex;
     list-style: none;
     padding-top: 16px;
     padding-bottom: 32px;
@@ -66,8 +66,8 @@ header {
 
 .aboutList {
     display: inline;
-    padding-bottom: 100px;
     text-decoration: underline;
+    padding-right: 50px
 }
 
 .worksList {
@@ -76,7 +76,6 @@ header {
 
 .listItems {
     list-style-type: none;
-    margin-top: 20px;
 }
 
 .emailTag {
