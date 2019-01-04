@@ -54,6 +54,8 @@ export default class MyWorks extends React.Component {
                 <br /> github주소
               </a>
             </div>
+          </div>
+          <div className="col">
             <div className="weather-app card">
               <h3>weather-app</h3>
               <h4>
@@ -69,8 +71,7 @@ export default class MyWorks extends React.Component {
               <br />
               <a href="https://github.com/gimdongwon/weather-app">github주소</a>
             </div>
-          </div>
-          <div className="col">
+
             <div className="icebreaking card">
               <h3>icebreaking</h3>
               <h4>어색할 때 분위기를 풀어주는 icebreaking 앱입니다.</h4>
@@ -100,6 +101,8 @@ export default class MyWorks extends React.Component {
                 <br /> github주소
               </a>
             </div>
+          </div>
+          <div className="col">
             <div className="snake-game card">
               <h3>snake-gage</h3>
               <h4>열매를 먹으며 뱀의 몸을 부풀리는 게임입니다.</h4>

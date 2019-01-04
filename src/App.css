@@ -1,6 +1,7 @@
 * {
     font-family: 'BMDOHYUN', 'Spoqa Han Sans JP', 'sans-serif';
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 @font-face {
@@ -36,6 +37,7 @@ header {
     padding-top: 16px;
     padding-bottom: 32px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 address {
@@ -63,13 +65,24 @@ a {
 .workList {
     display: inline-block;
     padding-left: 40px;
-}
-
-li:hover {
-    border-bottom: 3px solid #181818;
-    display: inline-block;
+    width: 1400px;
 }
 
 li {
-    display: inline;
+    display: inline-block;
+    border-bottom: 3px solid #fff;
 }
+
+li:hover {
+    border-bottom-color: #181818
+}
+
+
+/* li {
+    display: inline-block;
+    border: 1px solid #fff;
+}
+
+li:hover {
+    border-bottom-color: #181818;
+} */
