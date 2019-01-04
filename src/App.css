@@ -1,11 +1,16 @@
 * {
-    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'sans-serif';
+    font-family: 'BMDOHYUN', 'Spoqa Han Sans JP', 'sans-serif';
     box-sizing: border-box;
     letter-spacing: -.01em;
 }
 
+@font-face {
+    font-family: BMDOHYUN;
+    src: url(./font/BMDOHYEON.otf)
+}
+
 .App {
-    font-family: spoqaHanSans;
+    font-family: 'BMDOHYUN';
     display: flex;
     margin-top: 16px
 }
