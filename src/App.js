@@ -16,7 +16,7 @@ class App extends Component {
             href="http://mysite.com/img/apple-touch-icon-57x57.png"
           />
         </Helmet>
-        <Header className="Header" />
+        <Header className="header" />
         <Main className="Main" />
       </div>
     );

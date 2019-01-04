@@ -30,19 +30,22 @@ export default class MyIntroduce extends React.Component {
         <ul className="listItems">
           <p>
             Hihi! nice to meet you. My name is dongwon kim, I wanna be a front
-            end developer. <br />So, I am studying HTML, CSS, JavaScript,
-            React.js, Restful API, etc... <br />My dreams are a lot of things,
-            one of thing in strong wish is will be a great React-developer in
-            korea. <br />Thank you for reading this my writing. We will be able
-            to friendly.
+            end developer. <br />
+            So, I am studying HTML, CSS, JavaScript, React.js, Restful API,
+            etc... <br />
+            My dreams are a lot of things, one of thing in strong wish is will
+            be a great React-developer in korea. <br />
+            Thank you for reading this my writing. We will be able to friendly.
           </p>
           <li onClick={this.skilsClick} className="SkilsList">
             Skils
           </li>
+          <br />
           {this.state.skilsToggleOn ? <SkilsItems /> : ""}
           <li onClick={this.experiencsClick} className="ExperienceList">
             Experience
           </li>
+          <br />
           {this.state.experiencsToggleOn ? <ExperienceItems /> : ""}
           <li onClick={this.othersClick} className="OthersList">
             Others

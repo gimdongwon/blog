@@ -1,58 +1,123 @@
 import React from "react";
+import "./myWorks.css";
 
 export default class MyWorks extends React.Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <ul className="workList">
-          <li>
-            <p>
-              <p>
-                <a href="https://fastbook-memoapp.netlify.com/">fastbook</a>
-              </p>
+          <div className="col">
+            <div className="momf card">
+              <h3>MOMF</h3>
+              <h4>음악을 사랑하고 즐기는 사람들을 위한 페이지 입니다</h4>
+              <h5>우아한형제들 사이트를 모티브로 개발하였습니다.</h5>
+              <a href="https://github.com/gimdongwon/momf">
+                <img
+                  src="https://raw.githubusercontent.com/gimdongwon/momf/master/images/mdimage.JPG"
+                  alt="momf"
+                  width="290px"
+                />
+              </a>
+              <br />
+              <a href="https://github.com/gimdongwon/momf">github주소</a>
+            </div>
+            <div className="fastbook card">
+              <h3>fastbook</h3>
+              <h4>
+                언제 어디서나 인터넷에 저장하고 읽을 수 있는 메모장 앱니다.
+              </h4>
+              <h5>memo app motive by macOS </h5>
+              <a href="https://fastbook-memoapp.netlify.com/">
+                <img
+                  src="https://raw.githubusercontent.com/FastcampusMonkeys/fastBook/master/preview.png"
+                  alt="fastbook"
+                  width="290px"
+                  height="290px"
+                />
+              </a>
               <a href="https://github.com/FastcampusMonkeys/fastBook">
-                fastbook git repo
+                <br /> github주소
               </a>
-            </p>
-          </li>
-          <li>
-            <p>
+            </div>
+            <div className="baseball-game card">
+              <h3>Baseball game</h3>
+              <h4>상대방의 숫자를 맞추는 기본적인 야구게임 입니다.</h4>
+              <h5>10회안에 상대방의 숫자를 맞추어야 합니다.</h5>
               <a href="https://fastmonkeysbaseballgame.netlify.com/">
-                baseballgame
+                <img
+                  src="https://raw.githubusercontent.com/FastcampusMonkeys/fds-hackathon-template/master/preview.png"
+                  alt="baseball game"
+                  width="290px"
+                />
               </a>
-            </p>
-            <a href="https://github.com/FastcampusMonkeys/fds-hackathon-template">
-              baseballgame git repo
-            </a>
-          </li>
-          <li>
-            <p>
-              <a href="https://rgbchallengebydw.netlify.com/">RGB Challenge</a>
-            </p>
-            <a href="https://github.com/gimdongwon/RGBChallenge">
-              RGBChallenge git repo
-            </a>
-          </li>
-          <li>
-            <p>
-              <a href="https://snakegamedw.netlify.com">snakegame</a>
-            </p>
-            <a href="https://github.com/gimdongwon/fds-snake-game">
-              snakegame git repo
-            </a>
-          </li>
-          <li>
-            <p>
-              <a href="https://singlepageapp.netlify.com">
-                shoopingmall(CSS 미완성)
+              <a href="https://github.com/FastcampusMonkeys/fds-hackathon-template">
+                <br /> github주소
               </a>
-            </p>
-            <a href="https://github.com/gimdongwon/kungkidaero-7road">
-              shoopingmall git repo
-            </a>
-          </li>
+            </div>
+            <div className="weather-app card">
+              <h3>weather-app</h3>
+              <h4>
+                위치에 따른 날씨를 알려주는 react-native 하이브리드 앱입니다
+              </h4>
+              <h5>expo로 구현하였습니다. expo라 미리보기는 없습니다</h5>
+              <img
+                src="https://raw.githubusercontent.com/gimdongwon/weather-app/master/preview.png"
+                alt="weatherapp"
+                width="200px"
+                height="400px"
+              />
+              <br />
+              <a href="https://github.com/gimdongwon/weather-app">github주소</a>
+            </div>
+          </div>
+          <div className="col">
+            <div className="icebreaking card">
+              <h3>icebreaking</h3>
+              <h4>어색할 때 분위기를 풀어주는 icebreaking 앱입니다.</h4>
+              <h5>실제로 많은 공간에서 사용중입니다.</h5>
+              <a href="https://icebreaking.netlify.com/">
+                <img
+                  src="https://raw.githubusercontent.com/gimdongwon/icebreaking/master/preview.png"
+                  alt="weatherapp"
+                  width="290px"
+                />
+              </a>
+              <br />
+              <a href="https://github.com/gimdongwon/icebreaking">github주소</a>
+            </div>
+            <div className="rgb-challenge card">
+              <h3>rgb-challenge</h3>
+              <h4>color코드에 맞는 색을 찾는 게임입니다.</h4>
+              <h5>포인트를 쌓아가는 게임입니다.</h5>
+              <a href="https://rgbchallengebydw.netlify.com/">
+                <img
+                  src="https://raw.githubusercontent.com/gimdongwon/RGBChallenge/master/screenshot.png"
+                  alt="rgb-challenge"
+                  width="290px"
+                />
+              </a>
+              <a href="https://github.com/gimdongwon/RGBChallenge">
+                <br /> github주소
+              </a>
+            </div>
+            <div className="snake-game card">
+              <h3>snake-gage</h3>
+              <h4>열매를 먹으며 뱀의 몸을 부풀리는 게임입니다.</h4>
+              <h5>React로 구현하였습니다.</h5>
+              <a href="https://snakegamedw.netlify.com">
+                <img
+                  src="https://raw.githubusercontent.com/gimdongwon/fds-snake-game/master/preview.png"
+                  alt="rgb-challenge"
+                  width="290px"
+                />
+              </a>
+              <a href="https://github.com/gimdongwon/fds-snake-game">
+                <br /> github주소
+              </a>
+            </div>
+          </div>
         </ul>
-      </div>
+      </React.Fragment>
     );
   }
 }

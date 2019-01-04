@@ -7,33 +7,45 @@ export default class Main extends React.Component {
     currentState: ""
   };
 
+  onHomeClick = () => {
+    this.setState({
+      currentState: ""
+    });
+  };
+  onAboutClick = () => {
+    this.setState({
+      currentState: "About"
+    });
+  };
+  onWorksClick = () => {
+    this.setState({
+      currentState: "Works"
+    });
+  };
   render() {
+    let style = {
+      margin: "500px"
+    };
     return (
       <div>
         <ul className="menuList">
-          <li
-            onClick={e =>
-              this.setState({
-                currentState: "About"
-              })
-            }
-            className="aboutList"
-          >
+          <li onClick={this.onHomeClick} className="aboutList">
+            Home
+          </li>
+          <li onClick={this.onAboutClick} className="aboutList">
             About
           </li>
-          <li
-            onClick={e =>
-              this.setState({
-                currentState: "Works"
-              })
-            }
-            className="worksList"
-          >
+          <li onClick={this.onWorksClick} className="worksList">
             Works
           </li>
         </ul>
-        {this.state.currentState === "About" ? <MyIntroduce /> : ""}
-        {this.state.currentState === "Works" ? <MyWorks /> : ""}
+        {this.state.currentState === "About" ? (
+          <MyIntroduce />
+        ) : this.state.currentState === "Works" ? (
+          <MyWorks style={style} />
+        ) : (
+          ""
+        )}
       </div>
     );
   }

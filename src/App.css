@@ -1,59 +1,33 @@
 * {
     font-family: 'BMDOHYUN', 'Spoqa Han Sans JP', 'sans-serif';
     box-sizing: border-box;
-    letter-spacing: -.01em;
 }
 
 @font-face {
     font-family: BMDOHYUN;
-    src: url(./font/BMDOHYEON.otf)
+    src: url(./font/BMDOHYEON.otf);
 }
 
 .App {
-    font-family: 'BMDOHYUN';
     display: flex;
     margin-top: 16px
 }
 
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-}
-
-.App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-}
-
 .App-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
-.App-intro {
-    font-size: large;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.Header {
-    width: 40%;
+h1 {
+    padding-right: 50px;
 }
 
 header {
+    width: 270px;
     padding-left: 20px;
 }
 
 .main {
-    width: 60%;
+    width: 50%;
 }
 
 .menuList {
@@ -64,23 +38,13 @@ header {
     font-size: 20px;
 }
 
-.menuListPara {
-    margin-top: 50px;
-    margin-bottom: 50px;
+address {
+    text-decoration: none;
 }
 
 .aboutList {
-    display: inline;
-    text-decoration: underline;
-    padding-right: 50px
-}
-
-.worksList {
-    text-decoration: underline;
-}
-
-.listItems {
-    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
 }
 
 .emailTag {
@@ -96,23 +60,16 @@ a {
     margin-top: 300px;
 }
 
-.SkilsList {
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-
-.ExperienceList {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-
-.OthersList {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-
 .workList {
-    list-style: none;
+    display: inline-block;
+    padding-left: 40px;
+}
+
+li:hover {
+    border-bottom: 3px solid #181818;
+    display: inline-block;
+}
+
+li {
+    display: inline;
 }
