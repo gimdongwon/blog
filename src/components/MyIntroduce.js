@@ -38,7 +38,7 @@ export default class MyIntroduce extends React.Component {
             Thank you for reading this my writing. We will be able to friendly.
           </p>
           <li onClick={this.skilsClick} className="SkilsList xLarge">
-            Skils
+            Skills
           </li>
           <br />
           {this.state.skilsToggleOn ? <SkilsItems /> : ""}

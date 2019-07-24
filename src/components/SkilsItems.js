@@ -12,6 +12,9 @@ export default class SkilsItems extends Component {
         Webpack, Babel
         <br />
         React-Native(Interested)
+        <br />
+        <br />
+        <p>Trello, Github, Zeplin, Notion, Slack, Google document</p>
       </p>
     );
   }
