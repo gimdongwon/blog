@@ -24,13 +24,14 @@ export default class Main extends React.Component {
   };
   render() {
     let style = {
-      margin: "500px"
-    };
+        margin: "500px"
+      },
+      left = { margin: "40px" };
     return (
-      <div>
+      <div className="main">
         <ul className="menuList">
           <li onClick={this.onHomeClick} className="aboutList">
-            Home
+            Index
           </li>
           <li onClick={this.onAboutClick} className="aboutList">
             About
@@ -44,7 +45,7 @@ export default class Main extends React.Component {
         ) : this.state.currentState === "Works" ? (
           <MyWorks style={style} />
         ) : (
-          ""
+          <p style={left}>index..👋</p>
         )}
       </div>
     );

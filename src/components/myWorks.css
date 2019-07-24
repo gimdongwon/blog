@@ -1,6 +1,12 @@
+.workList {
+    display: inline-block;
+    width: 100%;
+    padding-left: 40px;
+}
+
 .card {
+    width: 33%;
     border-top: 1px solid gray;
-    width: 20%;
     margin-right: 50px;
     margin-bottom: 50px;
     font-size: 13px;
@@ -8,8 +14,19 @@
 
 .col {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.col {
-    display: flex;
+a>img {
+    width: 100%;
+}
+
+.github_wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.github_img {
+    width: 50px;
 }

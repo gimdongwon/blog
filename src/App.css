@@ -4,6 +4,18 @@
     background-color: #fff;
 }
 
+html,
+body,
+#root,
+.App {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    font-style: normal;
+}
+
 @font-face {
     font-family: BMDOHYUN;
     src: url(./font/BMDOHYEON.otf);
@@ -11,7 +23,6 @@
 
 .App {
     display: flex;
-    margin-top: 16px
 }
 
 .App-title {
@@ -23,12 +34,12 @@ h1 {
 }
 
 header {
-    width: 270px;
+    width: 20%;
     padding-left: 20px;
 }
 
 .main {
-    width: 50%;
+    width: 80%;
 }
 
 .menuList {
@@ -58,31 +69,28 @@ a {
     color: #181818
 }
 
-.copyTag {
-    margin-top: 300px;
+.header_title {
+    height: 10%;
 }
 
-.workList {
-    display: inline-block;
-    padding-left: 40px;
-    width: 1400px;
+.nav_wrap {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-li {
+li,
+.linkTag {
     display: inline-block;
     border-bottom: 3px solid #fff;
 }
 
-li:hover {
+li:hover,
+.linkTag:hover {
     border-bottom-color: #181818
 }
 
-
-/* li {
-    display: inline-block;
-    border: 1px solid #fff;
+.xLarge {
+    font-size: x-large;
 }
-
-li:hover {
-    border-bottom-color: #181818;
-} */

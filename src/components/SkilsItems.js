@@ -4,12 +4,14 @@ export default class SkilsItems extends Component {
   render() {
     return (
       <p>
-        HTML, CSS, JavaScript, ES6+ <br />
-        React, React-Router, Redux, Mobx <br />
+        HTML5+, CSS3, JavaScript, ES6+ <br />
+        React, React-Router, Redux, Mobx, React-Hooks <br />
         Restful API <br />
+        WebSocket, Socket.io
+        <br />
         Webpack, Babel
         <br />
-        React-Native(Basic)
+        React-Native(Interested)
       </p>
     );
   }
