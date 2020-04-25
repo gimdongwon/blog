@@ -14,7 +14,9 @@ export default class SkilsItems extends Component {
         React-Native(Interested)
         <br />
         <br />
-        <p>Trello, Github, Zeplin, Notion, Slack, Google document</p>
+        <p>
+          Trello, Github, Gitlab, Zeplin, Notion, Slack, Google document, Jira
+        </p>
       </p>
     );
   }
